@@ -256,6 +256,17 @@
     #define LED_PIN             9
     #define LED_ON_STATE        1
 
+#elif defined TARGET_GENERIC_F103_PA9_FASTBOOT
+
+    #define LED_BANK            GPIOA
+    #define LED_PIN             9
+    #define LED_ON_STATE        1
+    #define FASTBOOT 1
+
+    #define BUTTON_BANK GPIOB
+    #define BUTTON_PIN 6
+    #define BUTTON_PRESSED_STATE 0
+
 #elif defined TARGET_GENERIC_F103_PE5
 
     #define LED_BANK            GPIOE
